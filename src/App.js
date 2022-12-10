@@ -82,16 +82,23 @@ function App() {
                 <td>{singleData.ip_address}</td>
                 <td>{singleData.airport_code}</td>
                 <td>{singleData.time}</td>
+
                 <td
                   style={{
                     color:
-                      isTrue === "true" && serial === singleData.id
-                        ? "#fff"
-                        : "#545e6f",
+                      isTrue === "true" && serial === singleData.id && "#fff",
+                    color:
+                      isTrue === "false" &&
+                      serial === singleData.id &&
+                      "#545e6f",
                     background:
-                      isTrue === "true" && serial === singleData.id
-                        ? "#9ED597"
-                        : "#8f1909",
+                      isTrue === "false" &&
+                      serial === singleData.id &&
+                      "#8f1909",
+                    background:
+                      isTrue === "true" &&
+                      serial === singleData.id &&
+                      "#9ED597",
                   }}
                 >
                   {" "}
