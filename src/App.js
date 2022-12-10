@@ -86,19 +86,17 @@ function App() {
                 <td
                   style={{
                     color:
-                      isTrue === "true" && serial === singleData.id && "#fff",
-                    color:
-                      isTrue === "false" &&
-                      serial === singleData.id &&
-                      "#545e6f",
+                      isTrue === "true" && serial === singleData.id
+                        ? "#545e6f"
+                        : isTrue === "false" && serial === singleData.id
+                        ? "#fff"
+                        : "black",
                     background:
-                      isTrue === "false" &&
-                      serial === singleData.id &&
-                      "#8f1909",
-                    background:
-                      isTrue === "true" &&
-                      serial === singleData.id &&
-                      "#9ED597",
+                      isTrue === "true" && serial === singleData.id
+                        ? "#9ED597"
+                        : isTrue === "false" && serial === singleData.id
+                        ? "#8f1909"
+                        : "white",
                   }}
                 >
                   {" "}
